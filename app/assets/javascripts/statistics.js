@@ -120,7 +120,7 @@ function issueStatistics(issueevtObj,total_issues)
     $(".sub-nav").css("display","block")
     issue_statistics_url = $("li.home a").attr("href")
     returnData = ajaxRequest(issue_statistics_url + "/issues/issues_statistics","period="+Timeperiod+"&st_date="+Start_date+"&end_date="+End_date,false)    
-    created_vs_resolved_Statistics(returnData)
+    totalissue_chk = (total_issues == 0) ? $('#created_vs_resolved').html("Nothing here.").addClass("No-Value") : created_vs_resolved_Statistics(returnData)
 
     issues_assignee("opened_label",returnData.opened_label_details)
     issues_assignee("closed_label",returnData.fixed_label_details)
@@ -412,6 +412,7 @@ function bar_chart(Id,dataObj)
                 categories: category
             },
             yAxis: {
+		allowDecimals: false,
                 min: 0,
                 title: {
                     text: ''

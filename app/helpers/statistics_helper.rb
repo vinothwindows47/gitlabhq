@@ -53,6 +53,9 @@ module StatisticsHelper
 				
 				if evtobj[:data] != ""
 					cmtcount = evtobj.data[:total_commits_count]
+					if cmtcount == 0
+                                                cmtcount = 1
+                                        end
 				end
 
                                 pushed += cmtcount
