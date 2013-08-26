@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "statistics" %>
+<script type='javascrupt' src='/assets/javascripts/statistics.js'></script>
+<header class="sub-nav">
+        <div>
+		<a class="sub-nav_statistics sub-nav_statistics_active" onclick="displayDashboard(this,'overall_statistics')">OverAll Report</a>
+		<a class="sub-nav_statistics" onclick="displayDashboard(this,'xxx')">Issues</a>
+	</div>
+</header>
+<div class="container">
+	<span class="rptxt">Reporting period :</span>
+	<div id="reportrange">
+        	<i class="icon-calendar icon-large" style="0px 3px 0px 0px"></i>
+                <span></span> <b class="caret" style="margin: 7px 0px 0px 3px;"></b>
+          </div>
+</div>
+<div class="opacity_statistics">
+</div>

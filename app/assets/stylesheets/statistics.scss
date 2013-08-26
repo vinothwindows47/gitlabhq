@@ -1,0 +1,263 @@
+/* select box common style */
+
+label, select, input, textarea, button {
+    font: 99% "Lucida Sans Unicode", "Lucida Grande", "tahoma", Verdana, sans-serif;
+}
+
+.sub-nav {
+    padding: 0px 20px 10px 20px;
+    height: 40px;
+    top: 42px;
+    border-top: 1px transparent solid;
+    border-bottom: 1px #c5c5c5 solid;
+    display:none;
+}
+
+.sub-nav_statistics {
+    display: block;
+    float: left;
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    color: #507BA5;
+    text-align: center;
+    cursor:pointer;
+}
+
+.sub-nav_statistics_active {
+    color: #363636;
+    -moz-box-shadow: 0px 1px 5px -1px #555;
+    -webkit-box-shadow: 0px 1px 5px -1px #555;
+    box-shadow: 0px 1px 5px -1px #555;
+}
+
+.rptxt {
+    position: relative;
+    top: 24px;
+    left: 10px;
+    font: 12px "Lucida Sans Unicode", "Lucida Grande", "tahoma", Verdana, sans-serif;
+}
+
+#statistics,.issue_statistics
+{
+    font:12px "Lucida Sans Unicode", "Lucida Grande", "tahoma", Verdana, sans-serif;
+}
+
+.issue_statistics_container
+{
+    height:310px;
+}
+
+.main-nav {
+    margin:5px 0;
+}
+
+.btn-small {
+    padding:6px 12px;
+}
+
+/** list common style **/
+
+ul
+{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+/** **/
+
+/** link coomon style **/
+a
+{
+	text-decoration:none;
+	color:#777;
+}
+
+/** **/
+
+a.pName
+{
+    top: 15px;
+    position: relative;
+    left: 200px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    font:15px "Lucida Sans Unicode", "Lucida Grande", "tahoma", Verdana, sans-serif
+}
+.report_period
+{
+    position: relative;
+    width: 100%;
+    height: 8%;
+}
+.rpselbx
+{
+    position:relative;
+    left:5px;
+}
+
+#custom_span,#custom_span1
+{
+    position: relative;
+    top: 2px;
+    padding:10px;
+}
+
+.custom_text 
+{
+    left: 3px;
+    position: relative;
+    top: 2px;
+}
+.selevtTxt
+{
+    padding: 10px;
+    font-weight:bold;
+}
+#statistics,.issue_statistics
+{
+    position: relative;
+    float: left;
+    width: 98%;
+    top: 20px;
+    z-index: 1;
+    border: 1px solid #E3E3E3;
+    border-radius:10px;
+    background:#FFFFFF;
+}
+
+.issue_statistics
+{
+    max-width:365px;
+    position:relative;
+}
+
+.piechart_isuespan
+{
+    margin-left:5px;
+    position:absolute;
+}
+
+.hr_issue_statistics
+{
+    margin-top:3px;
+}
+
+.top_padd_issue
+{
+    margin-top:15px;
+}
+
+.left_padd_issue
+{
+    margin:15px 0px 0px 20px;
+}
+
+.issue_type_spn
+{
+    position: relative;
+    margin: 15px 0px 0px 10px;
+}
+
+.isue_typetotal
+{
+    right: 250px;
+    position: absolute;
+}
+
+.isue_typebar
+{
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    height: 10px;
+    left: 115px;
+    top: 4px;
+    max-width: 200px;
+}
+
+.isue_typepercentage
+{
+    position: absolute;
+    right: 7px;
+}
+
+.tot_issue_span
+{
+    position: absolute;
+    right: 30px;
+}
+
+.tot_issuetxt
+{
+    font-weight: bold;
+    color: #72a159;
+}
+
+.eventdv
+{
+    text-align: center;
+    border: 1px solid #E3E3E3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width: 25% !important;
+    margin-left: -1px;
+    float: left;
+    min-height: 56px;
+    height: 56px;
+    border-right:none;
+    background: -webkit-linear-gradient(top, #fff 0%, #f7f7f7 100%);
+    background: -moz-linear-gradient(center top ,#fff 0%, #f7f7f7 100%) repeat scroll 0% 0% transparent;
+}
+.eventdv:hover
+{
+    background:#efefef;
+    background: -webkit-linear-gradient(top, #DBDBDB 0%, #fbfbfb 100%);
+    background: -moz-linear-gradient(center top , rgb(219, 219, 219) 0%, rgb(251, 251, 251) 100%) repeat scroll 0% 0% transparent;
+
+}
+#cmtStatistics_Graph
+{
+    position: relative;
+    overflow: hidden;
+    width: 1100px;
+    height: 330px;
+    z-index: 0;
+    left:25px;
+    margin-bottom:20px;
+}
+
+.No-Value
+{
+	top:115px;
+	font-size:16px;
+	text-align:center;
+}
+
+.updevt
+{
+    list-style: none;
+}
+.stat-value
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.stat-txt
+{
+    font-size: 11px;
+    color: #777;
+    display: block;
+    line-height: 17px;
+}

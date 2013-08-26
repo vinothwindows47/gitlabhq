@@ -1,0 +1,10 @@
+<%= render 'dashboard/statistics_header' %>
+<%= render 'dashboard/statistics_dashboard' %>
+<script type="text/javascript">
+	var Start_date,End_date;
+        var Timeperiod = 7
+        var Selection_type = "Commits_event"
+        var statistics_url = "/dashboard_statistics/Dashboard_Activities"
+	getnormal_period();
+        eventStatistics(statistics_url);
+</script>

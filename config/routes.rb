@@ -64,6 +64,9 @@ Gitlab::Application.routes.draw do
   # Attachments serving
   #
   get 'files/:type/:id/:filename' => 'files#download', constraints: { id: /\d+/, type: /[a-z]+/, filename:  /.+/ }
+  get 'dashboard_statistics/Dashboard_Activities'
+  get 'repo_status' => 'dashboard_statistics#repo_status'
+  get 'update_notification' => 'dashboard_statistics#update_notification'
 
   #
   # Admin Area
@@ -136,6 +139,7 @@ Gitlab::Application.routes.draw do
   resource :dashboard, controller: "dashboard", only: [:show] do
     member do
       get :projects
+      get :statistics
       get :issues
       get :merge_requests
     end
@@ -179,6 +183,7 @@ Gitlab::Application.routes.draw do
       resources :blame,   only: [:show], constraints: {id: /.+/}
       resources :network,   only: [:show], constraints: {id: /(?:[^.]|\.(?!json$))+/, format: /json/}
       resources :graphs, only: [:show], constraints: {id: /(?:[^.]|\.(?!json$))+/, format: /json/}
+      resources :predict, only: [:show], constraints: {id: /(?:[^.]|\.(?!json$))+/, format: /json/}
       match "/compare/:from...:to" => "compare#show", as: "compare", via: [:get, :post], constraints: {from: /.+/, to: /.+/}
 
         resources :snippets do
@@ -283,6 +288,7 @@ Gitlab::Application.routes.draw do
 
       resources :issues, except: [:destroy] do
         collection do
+	  get :issues_statistics
           post  :bulk_update
         end
       end

@@ -29,3 +29,6 @@
 //= require_tree .
 //= require d3
 //= require underscore
+//= require highcharts
+//= require moment.min
+//= require daterangepicker
